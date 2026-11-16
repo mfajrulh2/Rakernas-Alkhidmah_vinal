@@ -141,16 +141,6 @@ APP RAKERNAS/
 
 ---
 
-## 🔑 Data Akun Login Bawaan (Default Seed)
-
-| Role / Akses | Username | Password | Keterangan |
-| :--- | :--- | :--- | :--- |
-| **Super Admin** | `admin` | `admin123` | Akses penuh seluruh modul nasional |
-| **Petugas Front Desk** | `petugas` | `petugas123` | Akses cepat scan presensi kehadiran |
-| **PW Jawa Timur** | `pw_jatim` | `pw123` | Pendaftaran delegasi PW Jatim |
-| **PW Jawa Tengah** | `pw_jateng` | `pw123` | Pendaftaran delegasi PW Jateng |
-| **PW Jawa Barat** | `pw_jabar` | `pw123` | Pendaftaran delegasi PW Jabar |
-| **PW DKI Jakarta** | `pw_dki` | `pw123` | Pendaftaran delegasi PW DKI & Banten |
 
 ---
 
