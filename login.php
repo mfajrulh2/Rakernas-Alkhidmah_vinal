@@ -99,19 +99,7 @@ require_once __DIR__ . '/includes/header.php';
                 </button>
             </form>
 
-            <!-- Petunjuk Akun Demo / Default -->
-            <div class="mt-8 pt-6 border-t border-slate-100 bg-slate-50 -mx-8 -mb-8 p-6 rounded-b-3xl">
-                <div class="text-xs font-semibold text-slate-500 mb-2 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    Informasi Akun Default (Database Seed):
-                </div>
-                <div class="text-[11px] text-slate-600 space-y-1 font-mono">
-                    <div>• <strong>Panitia Pusat:</strong> admin / admin123</div>
-                    <div>• <strong>Admin PW Jatim:</strong> pw_jatim / pw123</div>
-                    <div>• <strong>Admin PW Jateng:</strong> pw_jateng / pw123</div>
-                    <div>• <strong>Petugas Scan:</strong> petugas / petugas123</div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>

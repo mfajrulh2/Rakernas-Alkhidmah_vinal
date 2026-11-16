@@ -63,10 +63,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <div class="container mx-auto flex items-center justify-between">
             <span class="flex items-center gap-2">
                 <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span><?= clean(getSetting('event_name', 'RAKERNAS PERKUMPULAN JAMA\'AH AL KHIDMAH')) ?></span>
+                <span><?= clean(getSetting('event_name', 'RAKERNAS I JAMA\'AH AL KHIDMAH')) ?></span>
             </span>
             <span class="hidden md:inline text-emerald-200 text-[11px]">
-                <?= clean(getSetting('event_date', '15 - 17 November 2026')) ?> • <?= clean(getSetting('event_location', 'Pondok Pesantren Al Fithrah')) ?>
+                <?= clean(getSetting('event_date', '11 - 12 Desember 2026')) ?> • <?= clean(getSetting('event_location', 'BBPMP Provinsi Jawa Tengah')) ?>
             </span>
         </div>
     </div>
