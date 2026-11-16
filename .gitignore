@@ -1,0 +1,24 @@
+# Environments & IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Sessions
+*.log
+session/
+
+# Uploaded Files (Keep directory structure with .gitkeep)
+uploads/participants/*
+!uploads/participants/.gitkeep
+uploads/payments/*
+!uploads/payments/.gitkeep
+uploads/logos/*
+!uploads/logos/.gitkeep
+
+# Temporary files
+*.tmp
+*.bak

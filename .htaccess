@@ -1,0 +1,28 @@
+# ========================================================
+# Apache Configuration for RAKERNAS Jama'ah Al Khidmah
+# ========================================================
+
+Options -Indexes
+ServerSignature Off
+
+# UTF-8 Encoding Default
+AddDefaultCharset UTF-8
+
+# Blokir Akses Langsung ke File Sensitif
+<FilesMatch "(database\.php|\.sql|\.git|\.env|composer\.json|README\.md)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# PHP Execution Settings (Optional / Compatible)
+<IfModule mod_php.c>
+    php_value upload_max_filesize 20M
+    php_value post_max_size 25M
+    php_value max_execution_time 300
+    php_value max_input_time 300
+</IfModule>

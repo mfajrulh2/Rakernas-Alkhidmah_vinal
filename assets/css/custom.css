@@ -1,0 +1,70 @@
+/* Custom CSS & Print Styles for RAKERNAS Jama'ah Al Khidmah */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+.font-arabic {
+    font-family: 'Amiri', serif;
+}
+
+/* Islamic pattern background overlay */
+.bg-islamic-pattern {
+    background-color: #064e3b;
+    background-image: radial-gradient(#059669 0.75px, transparent 0.75px), radial-gradient(#059669 0.75px, #064e3b 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+}
+
+/* Glassmorphism effect */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+/* ID Card Printable Styles */
+.id-card-wrapper {
+    width: 85mm;
+    min-height: 125mm;
+    box-sizing: border-box;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .print-sheet {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8mm !important;
+        padding: 5mm !important;
+        background: white !important;
+    }
+
+    .id-card-wrapper {
+        border: 1px dashed #9ca3af !important;
+        box-shadow: none !important;
+        margin-bottom: 5mm !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 8mm;
+    }
+}
