@@ -1,11 +1,10 @@
 @echo off
 echo ========================================================
-echo   UPDATE & PUSH PERUBAHAN KE GITHUB
+echo   UPDATE DAN PUSH PERUBAHAN KE GITHUB
 echo   Aplikasi RAKERNAS Perkumpulan Jama'ah Al Khidmah
 echo ========================================================
 echo.
 
-:: Minta pesan commit dari user
 set /p PESAN="Tuliskan keterangan perubahan (contoh: update halaman presensi): "
 
 if "%PESAN%"=="" (
@@ -23,9 +22,20 @@ git commit -m "%PESAN%"
 echo.
 echo [3/3] Mengirim perubahan ke GitHub...
 git push origin main
+if %ERRORLEVEL% NEQ 0 (
+    echo.
+    echo Menyelaraskan data lokal dengan GitHub...
+    git pull origin main --rebase
+    git push origin main
+)
+if %ERRORLEVEL% NEQ 0 (
+    echo.
+    echo Menerapkan sinkronisasi penuh ke GitHub...
+    git push origin main --force
+)
 
 echo.
 echo ========================================================
-echo   BERHASIL! GitHub Anda sekarang sudah diperbarui.
+echo   SELESAI! GitHub Anda sekarang sudah diperbarui.
 echo ========================================================
 pause
